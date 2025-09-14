@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Інтернет-магазин</title>
+</head>
+<body>
+  <h1>Інтернет-магазин</h1>
+  <button id="cartBtn">Корзина</button>
+  <button id="ordersBtn">Мої замовлення</button>
+  <div id="categories">
+    <h2>Категорії товарів</h2>
+    <button onclick="makeOrder('Телефон', 10000)">Купити телефон</button>
+    <button onclick="makeOrder('Ноутбук', 25000)">Купити ноутбук</button>
+    <button onclick="makeOrder('Навушники', 2000)">Купити навушники</button>
+  </div>
+  <div id="ordersPage" style="display:none;">
+    <h2>Мої замовлення</h2>
+    <div id="ordersList"></div>
+    <button onclick="goBack()">Назад</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
